@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="./dom.js"></script>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/gym1.jpg');
+        color: white;
+    }
+
+    .left {
+        position: absolute;
+        display: inline-block;
+        left: 60px;
+        top: 20px;
+        line-height: 16px;
+        font-size: 23px;
+        background-color: black;
+    }
+
+    .left img {
+        width: 126px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        font-family: 'Borel', cursive;
+        display: block;
+        margin: 20px auto;
+        width: 47%;
+        position: fixed;
+        right: 405px;
+        top: 0px;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 36px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 18px 20px;
+        font-size: 25px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(247, 224, 224);
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 8px 14px;
+        border: 2px solid grey;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 266px 93px;
+        padding: 41px;
+        width: 26%;
+        border-radius: 26px;
+    }
+
+    .formgroup input {
+        text-align: center;
+        margin: 7px auto;
+        display: block;
+        padding: 5px 18px;
+        width: 300px;
+        font-size: 17px;
+        border-radius: 25px;
+    }
+
+    .formgroup input:hover {
+        background-color: rgb(203, 205, 195);
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        margin: auto;
+        display: block;
+        width: 115px;
+        position: relative;
+        top: 9px;
+    }
+
+    .formgroup1 {
+        text-align: center;
+        position: relative;
+        top: 3px;
+        font-size: 20px;
+        left: 14px
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div>Fitness Club</div>
+        </div>
+        <!-- Mid box for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="home">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <!-- Right box for search -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of India.</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+                <input type="email" name="" placeholder="Enter your email">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <div class="formgroup1">
+                <label for="gen">
+                    My Gender: &nbsp; Male <input type="radio" name="mygender" id="gen"> &nbsp;
+                </label>
+                <label for="gen1">
+                    Female <input type="radio" name="mygender" id="gen1">
+                </label>
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
